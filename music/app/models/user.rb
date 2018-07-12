@@ -37,16 +37,10 @@ class User < ApplicationRecord
 
   def password=(password)
     @password = password
-    self.password_digest = BCrypt::Passwordss.create(password)
+    self.password_digest = BCrypt::Password.create(password)
   end
 
   def is_password?(password)
     BCrypt::Password.new(self.password_digest).is_password?(password)
-  end
-
-
-  private
-  def user_params
-    params.require(:user).allow(:email, :password)
   end
 end
