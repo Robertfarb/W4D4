@@ -7,7 +7,7 @@ end
 
 
 gem 'pry-rails'
-gem 'Bcrypt'
+gem 'bcrypt'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.6'
 # Use postgresql as the database for Active Record
@@ -53,6 +53,7 @@ group :development do
   gem 'better_errors'
   gem 'binding_of_caller'
   gem 'faker'
+  gem 'annotate'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
