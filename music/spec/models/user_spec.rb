@@ -35,7 +35,9 @@ RSpec.describe User, type: :model do
   end
 
   describe '::find_by_credentials' do
-    mr_t = User.create(email: "mrt@ihack.com", password: "123456")
+    # begin
+    #     mr_t = User.create(email: "mrt@ihack.com", password: "123456")
+    # rescue
 
     it 'should find a user by their email and password' do
       expect(User.find_by_credentials("mrt@ihack.com", "123456").email).to eq("mrt@ihack.com")
