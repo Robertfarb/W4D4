@@ -19,7 +19,7 @@ class SessionsController < ApplicationController
   end
 
   def destroy
-    logout_user!
+    logout_user(current_user)
     redirect_to new_session_url
   end
 end

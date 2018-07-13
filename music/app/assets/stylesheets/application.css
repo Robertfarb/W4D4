@@ -13,3 +13,27 @@
  *= require_tree .
  *= require_self
  */
+
+body, h1, h2{
+  font-family: marker-felt, fantasy;
+}
+
+h1{
+  text-align: center;
+}
+
+input {
+  border-radius: 10px;
+  padding: 15px;
+  background-color: #35c0ff;
+}
+
+/* .header {
+  background-image: url('/assets/digital-music-dj-mixer-website-header.jpg');
+  background-size: auto;
+  background-repeat: no-repeat;
+} */
+
+.logout{
+  float: right;
+}

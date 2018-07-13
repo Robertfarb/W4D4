@@ -4,5 +4,5 @@ Rails.application.routes.draw do
 
   resource :session, only: [:create, :destroy, :new]
 
-  root 'users#new'
+  root 'sessions#new'
 end
