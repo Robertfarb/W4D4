@@ -18,6 +18,10 @@ body, h1, h2{
   font-family: marker-felt, fantasy;
 }
 
+body {
+  text-align: center;
+}
+
 h1{
   text-align: center;
 }
@@ -36,4 +40,16 @@ input {
 
 .logout{
   float: right;
+}
+
+.nav-btn{
+  display: flex;
+  float: right;
+  margin-right: 5px;
+}
+
+.music-app{
+  float: left;
+  display: inline;
+  line-height: 0;
 }
